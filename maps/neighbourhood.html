@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Neighbourhood map</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+  <div class="container">
+    <div id="map">
+      <!-- <p id="map_error" data-bind="text: error"></p> -->
+    </div>
+    <div id="searchbar">
+      <h4> Neighbourhood Map</h4>
+      <input type="text" id="searchbox" data-bind="textInput: search, valueUpdate: 'afterkeydown'">
+      <div data-bind="foreach: filter">
+        <br>
+        <a href="#" data-bind="text: title, click: $parent.populateInfoWindow"></a>
+      </div>
+      <img src="http://movie-teacher.pw/wp-content/uploads/2017/12/Foursquare-City-Guide.jpg" alt="four square image">
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script
+      src="js/knockout-3.4.2.js" charset="utf-8">
+  </script>
+
+  <script src="maps.js" charset="utf-8"></script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyBsD2P6EbYFBwm8yA2mBt0Vu7N3rYUZA54&callback=start"
+  onerror = "error()">
+  </script>
+</body>
+</html>

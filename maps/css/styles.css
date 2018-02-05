@@ -1,0 +1,19 @@
+#map{
+  /* height: 100%; */
+  width: 70%;
+}
+.container{
+  display: flex;
+  height: 100%;
+  width:100%;
+}
+img{
+  margin-top: 450px;
+  height: 40px;
+}
+a{
+  padding: 15px;
+}
+input{
+  margin-left: 15px;
+}
